@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Guide</title>
+    <!-- Linking an external css file for styling. External is better because it keeps your code clean by separating the styling commands. -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Title of the guide using h1. h1 is the largest heading of all headings. -->
+
+    <h1>HTML & CSS Quick Reference Guide</h1>
+
+    <!-- Setting a div block here to store the HTML tags section in it. -->
+
+    <div class="html-tags">
+
+        <h2>HTML Tags</h2> <!-- HTML Tags heading using h2 - the second largest heading option. -->
+
+        <h3>&lt;p&gt; - Paragraph</h3> <!-- &lt means less than (<) and &gt means greater than (>). These are used to avoid errors in the code. -->
+        <p>This tag defines a paragraph of text.</p> <!-- Description of the tag -->
+        <h4>Example:</h4> 
+        <pre><code>&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;h1&gt; - Heading 1</h3>
+        <p>This tag defines the largest kind of heading. It can come in 6 forms.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;h1&gt;Section Title&lt;/h1&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;ul&gt; - Unordered List</h3>
+        <p>This tag defines an unordered (bulleted) list. Items are defined by &lt;li&gt;.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;ol&gt; - Ordered List</h3>
+        <p>This tag defines an ordered (numbered) list. Items are also defined by &lt;li&gt;. </p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;div&gt; - Division</h3>
+        <p>This tag defines a division or section in an HTML document. It's often used as a container to store HTML elements for better organization.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;Content inside the container.&lt;/p&gt;
+&lt;/div&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;img&gt; - Image</h3>
+        <p>This tag embeds an image in an HTML document.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;li&gt; - List Item</h3>
+        <p>This tag defines a list item within an ordered (&lt;ol&gt;) or unordered (&lt;ul&gt;) list.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;li&gt;List item content&lt;/li&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;input&gt; - Input Field</h3>
+        <p>This tag defines an input field for user input.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;input type="text" name="username" placeholder="Username"&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;br&gt; - Line Break</h3>
+        <p>This tag inserts a single line break to move to the next line.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>Line 1&lt;br&gt;Line 2</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>&lt;hr&gt; - Horizontal Rule</h3>
+        <p>This tag defines a thematic break in an HTML page, and is seen as a divider line.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>&lt;hr&gt;</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+    </div>
+
+    <!-- A separate div block to store the CSS properties explanations. -->
+
+    <div class="css-properties">
+        <h2>CSS Properties</h2> <!-- A 2nd level heading for CSS Properties. -->
+
+        <h3>color</h3>
+        <p>Sets the color of text.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>p { color: blue; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>background-color</h3>
+        <p>Sets the background color of an element.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>div { background-color: lightgray; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>font-size</h3>
+        <p>Sets the size of the font.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>h2 { font-size: 24px; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>margin</h3>
+        <p>Sets the outer spacing of an element.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>div { margin: 10px; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>padding</h3>
+        <p>Sets the inner spacing of an element.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>div { padding: 20px; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>border</h3>
+        <p>Customizes the border of an element.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>div { border: 1px solid black; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>text-align</h3>
+        <p>Sets the horizontal alignment of text.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>p { text-align: center; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+
+        <h3>font-family</h3>
+        <p>Sets the font family. Options include 'Times New Roman', 'Consolas', 'Arial', and more.</p> <!-- Description of the tag -->
+        <h4>Example:</h4>
+        <pre><code>body { font-family: sans-serif; }</code></pre> <!-- <code> and <pre> is used to showcase a code example. -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* This styles the body of the webpage */
+
+body {
+    background-color: white; /* Just a default color for the background. */
+    padding: 20px; /* To create spacing between the border of the body and the card itself. */
+    background-image: url('images/cafe.png'); /* Links to the cafe image in the images folder. */
+    background-repeat: no-repeat; /* To make sure the background doesn't repeat */
+    background-attachment: fixed; /* Made the background fixed so that it doesn't move when scrolling. */
+    background-size: cover; /* Covers the whole page. */
+}
+
+/* The white round card seen in the website */
+
+.card {
+    max-width: 620px; /* Adjusts the max width of the card to 620 pixels. */
+    margin: auto; /* Sets the margin to automatic, giving it a default state. */
+    background: white; /* Makes the background color of the card white. */
+    padding: 40px; /* Adjusts the spacing around the elements in the card. */
+    border-radius: 20px; /* Makes the card curvy. */
+    min-height: 600px; /* Adjusts the minimum height of the card to 600 pixels. */
+    line-height: 2; /* Adjusts the line spacing between each element in the card. */
+}
+
+/* Header on top of the card */
+
+.card_image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Covers the entire area. */
+    border-radius: 20px; /* Curves the corners of the image. */
+}
+
+.recipe_info {
+    padding-bottom: 2px; /* Added a tiny bit of spacing between the info and the next section */
+    text-align: center; /* Centers the text of the info. */
+}
+
+#recipeHeader {
+    font-size: 24px; /* Changes the size of the text. */
+    font-family: 'Georgia'; /* Gave the header the 'Georgia' font. */
+    color: #4F3726; /* Gave the header a brown color. */
+}
+
+#recipeDesc {
+    font-size: 16px;
+    margin-top: -10px; /* Moving the paragraph of the description slightly upward here to make it look better. */
+}
+
+/* Sticker size - This is to adjust the sizes of the cute coffee sticker icons seen in the card. */
+
+.sticker {
+    width: 275px;
+    height: 275px;
+}
+
+/* Equipment section */
+
+.equipment_section {
+    padding-bottom: 10px;
+}
+
+.equipment_description {
+    display: flex; /* Gave this a flexbox layout to align the text box and the sticker side by side. Using this kind of layout makes everything more organized. */
+    gap: 75px; /* The gap between the text box and the sticker */
+    align-items: center; /* Centers these items vertically */
+    flex-wrap: wrap; /* Wraps these elements together for users on smaller screens */
+}
+
+#eqHeader {
+    text-align: center;
+    font-family: 'Georgia';
+    color: #4F3726;
+}
+
+#eqList {
+    text-align: left; /*Aligns the text in the list to the left */
+}
+
+/* Ingredients section */
+
+.ingredients_section {
+    padding-bottom: 10px;
+}
+
+.ingredients_description {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ingHeader {
+    text-align: center;
+    font-family: 'Georgia';
+    color: #4F3726;
+}
+
+#ingList {
+    text-align: left;
+}
+
+/* Method section */
+
+.method_section {
+    padding-top: 30px;
+}
+
+#metHeader {
+    text-align: center;
+    font-family: 'Georgia';
+    color: #4F3726;
+}
+
+#metList {
+    text-align: justify;
+    margin-right: 30px;
+}
+
+

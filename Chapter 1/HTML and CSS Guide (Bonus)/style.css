@@ -1,0 +1,39 @@
+/* Styles the body of the webpage */
+
+body {
+    padding: 120px;
+    background-image: url('bg.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Styles the elements with <h1> tags */
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Consolas';
+}
+
+/* Styles the HTML tags container and elements inside it */
+
+.html-tags {
+    background-color: white; /* Sets the container's background color as white. */
+    border: 3px solid black; /* Gives a slightly thick border to the container. */
+    border-radius: 20px; /* Adds curves to the container. */
+    padding: 40px; /* Adjusts the inner spacing around the elements in the container. */
+    margin-bottom: 40px; /* Adds distance from the CSS properties container below it. */
+    font-family: 'Consolas'; /* Consolas font is used for the elements inside. */
+}
+
+/* Styles the CSS properties container and elements inside it */
+/* Same settings from .HTML-tags are used except margin-bottom since there aren't any elements below. */
+
+.css-properties {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    font-family: 'Consolas';
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipe</title>
+    <!-- Linking an external css file for styling. External is better because it keeps your code clean by separating the styling commands. -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Made a div tag to add a container for all the information. Just a little design choice of mine. -->
+    <!-- A div tag is often used to group sections or items in a webpage. It's to organize elements together. -->
+
+    <div class="card"> <!-- Giving this parent container a class known as card. It's used to identify elements when styling or adding javascript. -->
+        
+        <!-- Main image -->
+        <div class="main_image">
+            <!-- Using the img tag to add an image. 'src' specifies the path of the image file. 'alt' is an alternative name for the image. -->
+            <!-- Gave this image a class because I plan to style it. -->
+            <img src="images/marshmallow_mocha.jpg" alt="Toasted Marshmallow Mocha" class="card_image">
+        </div>
+
+        <!-- Recipe info -->
+         <div class="recipe_info">
+            <!-- '<h1>' defines the most important heading. It's the biggest out of all 6 heading types. -->
+            <h1 id="recipeHeader">Toasted Marshmallow Mocha Recipe</h1> <!-- Gave this header an ID to identify and style it in the stylesheet. -->
+            
+            <!-- '<p>' is used to define a paragraph. Gave this an ID to style it in the stylesheet too.-->
+            <p id="recipeDesc">
+                A rich and cozy mocha topped with homemade toasted marshmallow cream. Perfect for a campfire treat!
+            </p>
+            
+            <p>
+                <i>Submitted by: Kelvin Marron Bautista</i> <!-- The <i> tag italicizes text. -->
+            </p>
+         </div>
+
+        <hr> <!-- This tag adds a divider line that separates content. -->
+
+        <!-- Equipment section -->
+        <!-- This section has an UNORDERED list. -->
+
+        <div class="equipment_section">
+            <h2 id="eqHeader">Equipment needed:</h2> <!-- '<h2>' defines the 2nd most important heading. I used it here as a sub title. -->
+            <div class="equipment_description">
+                <ul id="eqList"> <!-- <ul> tag makes an UNORDERED list -->
+                    <!-- <li> defines a text as a list item -->
+                    <li>Coffee maker or espresso machine</li>
+                    <li>Saucepan</li>
+                    <li>Whisk</li>
+                    <li>Large mixing bowl</li>
+                    <li>Electric mixer</li>
+                    <li>Kitchen torch</li>
+                    <li>Mugs</li>
+                </ul>
+                <img src="images/coffee-filter.png" alt="Coffee image" class="sticker"> <!-- Added an image here for the equipment section -->
+            </div>
+        </div>
+
+        <hr> <!-- This tag adds a divider line that separates content. -->
+
+        <!-- Ingredients section -->
+        <!-- Just the same process with the equipment section. This time, the image comes first for design purposes. -->
+
+        <div class="ingredients_section">
+            <h2 id="ingHeader">Ingredients:</h2>
+            <div class="ingredients_description">
+                <img src="images/coffee-bag.png" alt="Coffee image" class="sticker">
+                <ul id="ingList">
+                    <li>120ml of strong brewed coffee or espresso</li>
+                    <li>60ml of chocolate syrup</li>
+                    <li>480ml of whole milk</li>
+                    <li>240ml of heavy cream</li>
+                    <li>50g of granulated sugar</li>
+                    <li>1/4 tsp of vanilla extract</li>
+                    <li>1/4 cup of powdered sugar</li>
+                    <li>1 large egg white</li>
+                    <li>A pinch of cream of tartar</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr> <!-- This tag adds a divider line that separates content. -->
+
+
+        <!-- Method -->
+        <!-- This section uses an ORDERED LIST -->
+
+        <div class="method_section">
+            <img src="images/cf_making2.jpg" alt="Toasted Marshmallow Mocha" class="card_image"> <!-- Giant image for the method section -->
+            <h2 id="metHeader">Method:</h2>
+            <ol id="metList"> <!-- The '<ol>' makes an ORDERED list-->
+                <!-- All the list items below are marked with numbers in order. -->
+                <li>Brew coffee or espresso and set aside.</li>
+                <li>In a small saucepan, heat milk and chocolate syrup over medium heat, whisking until combined and hot.</li>
+                <li>In a large bowl, whip heavy cream, granulated sugar, and vanilla extract until stiff peaks form.</li>
+                <li>In another bowl, beat egg white and cream of tartar until foamy. Gradually add powdered sugar and beat until stiff peaks form.</li>
+                <li>Gently fold the egg white mixture into the whipped cream to create the marshmallow cream.</li>
+                <li>Divide the hot chocolate-coffee mixture between two mugs.</li>
+                <li>Top each mug with a generous dollop of marshmallow cream.</li>
+                <li>Using a kitchen torch, carefully toast the marshmallow cream until golden brown.</li>
+                <li>Serve immediately and enjoy your Toasted Marshmallow Mocha!</li>
+            </ol>
+        </div>
+    </div>
+    
+</body>
+</html>
