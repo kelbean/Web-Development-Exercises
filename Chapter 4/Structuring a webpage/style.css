@@ -1,0 +1,115 @@
+/* Body */
+
+body {
+    font-family: Arial; /* Following the instructions, the body font must be Arial.  */
+    font-weight: 400; /* Weight of the font should be 400 making it regular.  */
+    margin: 0; /* This removes the default margin to get rid of the white spacing. */
+}
+
+/* Header and Navigation Bar */
+
+header {
+    background-color: #17072b; /* Following the instructions, the header color should be set as this hex code.  */
+    color: #FFFFFF; 
+    text-align: center; /* Centers everything. */
+    padding: 15px; /* Adjusts the spacing between the elements. */
+    padding-bottom: 10px; /* I wanted to tweak the spacing between the nav links and the bottom a little to make it look better. */
+}
+
+header h1 {
+    font-family: Tahoma; /* Following the instructions, logo and headings should be in Tahoma font. */
+    font-weight: 700; /* Headings should have 700 font weight to make it bold. */
+    text-decoration: underline; /* Underlines the heading. */
+    margin: 0; /* Removes the default margin. */
+}
+
+nav ul {
+    list-style-type: none; /* Removes the list symbols from the nav links since it's set as a list. */
+    padding: 0; /* Removes the default padding. */
+    margin-top: 25px; /* Adjusts the spacing between the nav links and the text 'Digi Fest 2022' itself. */
+}
+
+nav ul li {
+    display: inline; /* Displays the nav links horizontally. */
+    margin: 0 15px; /* Adds spacing to the left and right of each nav link item. */
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none; /* Removes the underline from the nav link items. */
+}
+
+/* Main content */
+
+main {
+    display: flex; /* Enables flexbox to make the layout flexible. */
+    justify-content: space-between; /* Makes the space between welcome and line up sections even. */
+    padding: 20px; /* Adjusts the padding of the main content. */
+}
+
+.welcome {
+    flex: 2; /* By setting this to 2, the welcome section takes up twice as much space as the line up section. */
+    padding-right: 20px; /* Adds slight spacing between welcome and line up sections. */
+}
+
+.welcome h2 {
+    color: #000000;
+    font-family: Tahoma; /* Following the instructions, logo and headings should be in Tahoma font. */
+    font-weight: 700; /* Headings should have 700 font weight to make it bold. */
+    text-decoration: underline; /* Underlines the welcome heading. */
+}
+
+.welcome p {
+    color: #000000;
+    font-size: 18px; /* Increased the font size a little to make it readable. */
+}
+
+.welcome img {
+    width: 100%; /* Makes the welcome image fill up the width of its whole container */
+}
+
+/* Line Up Content */
+
+.line_up {
+    flex: 1; /* By setting this to 1, this section only takes up one unit of space. */
+    background-color: #172d67; /* Following the instructions, this should be the aside section's background color. */
+    color: #FFFFFF;
+    padding: 20px;
+    margin-right: -20px; /* I noticed that this aside section's right side is sticked to the border so I decreased its right margin. */
+    margin-bottom: 3px; /* To match the size evenly with the welcome image.*/
+}
+
+.line_up h2 {
+    margin-top: 0;
+    text-decoration: underline; /* Underlines the line up heading. */
+    font-family: Tahoma; /* Same old Tahoma font for the headings. */
+    font-weight: 700; /* Adds 700 weight making it bold. */
+}
+
+.line_up ul {
+    font-size: 18px; /* Increased the font size a little to make it more readable. */
+    list-style: none; /* Since there isn't exactly a list-style-type option for dashes, I removed the bullet points and added it manually. */
+    padding: 0;
+    line-height: 2; /* Increased the spacing between the text's heights. */
+}
+
+/* Line Up Images */
+
+.line_up .square_images {
+    display: flex; /* Makes the layout of the images flexible. */
+    justify-content: space-between; /* Adds even spaces between the images. */
+    margin-top: 70px; /* Spacing between the line up text and images. */
+}
+
+.line_up .square_images img {
+    width: 48%; /* Uses up 48% of the container's width. */
+    aspect-ratio: 1 / 1; /* Squares up the images. */
+    object-fit: cover; /* Maintains the aspect ratio and covers the box. */
+}
+
+footer {
+    background-color: #8c15e9; /* Following the instructions, this should be the hex code set for the footer. */
+    color: #FFFFFF;
+    text-align: center; /* Centers the copyright notice. */
+    padding: 5px; /* Adjusts the spacing between the text and edges. */
+}

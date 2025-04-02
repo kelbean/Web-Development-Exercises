@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <!-- Linking this html file to an external css stylesheet file for styling. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation bar -->
+
+    <header>
+        <nav> <!-- Using the nav tag to create a nav bar for all the nav items. -->
+            <ul> <!-- I used the website I made from chapter 2 as reference when making this nav bar.  -->
+                <li><a href="#">Home</a></li> <!-- Since this is just for a design draft, there'll be no links attached. -->
+                <li><a href="#">To-Do</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Assignments</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav_corner"> <!-- Right side of the nav bar, there's a button and a hamburger icon. -->
+            <a href="https://metaverseage.ae/" target="_blank" class="study_lab_button">STUDY LAB</a> <!-- The button links to the metaverse site. -->
+            <button class="hamburger_icon">&#9776;</button> <!-- Hamburger icon doesn't do anything as this is just a design draft. -->
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <!-- Main content will be split into two columns: In progress section and To-Do list/study session section. -->
+
+    <main>
+        <section class="in_progress">
+            <h2>In progress:</h2>
+            <div class="topic"> <!-- This block is a container that contains both the topic text and image. -->
+                <div class="topic_image">
+                    <img src="images/html.jpg" alt="Intro to Javascript"> <!-- Using an image for each topic. -->
+                </div>
+                <h3>HTML Basics</h3> <!-- Title of the topic -->
+            </div>
+            <div class="topic"> <!-- This block is a container that contains both the topic text and image. -->
+                <div class="topic_image">
+                    <img src="images/css-basics.jpg" alt="Intro to Javascript"> <!-- Using an image for each topic. -->
+                </div>
+                <h3>CSS Basics</h3> <!-- Title of the topic -->
+            </div>
+            <div class="topic"> <!-- This block is a container that contains both the topic text and image. -->
+                <div class="topic_image">
+                    <img src="images/js.jpg" alt="Intro to Javascript"> <!-- Using an image for each topic. -->
+                </div>
+                <h3>Intro to Javascript</h3> <!-- Title of the topic -->
+            </div>
+            <div class="topic"> <!-- This block is a container that contains both the topic text and image. -->
+                <div class="topic_image">
+                    <img src="images/res-design.jpg" alt="Intro to Javascript"> <!-- Using an image for each topic. -->
+                </div>
+                <h3>Responsive Web Design</h3> <!-- Title of the topic -->
+            </div>
+            <div class="browse"> <!-- The browse arrow icons. They don't do anything for now since it's just a design. -->
+                <span><</span>
+                <span>1</span>
+                <span>></span>
+            </div>
+        </section>
+
+        <!-- Aside content -->
+        <!-- This represents the right section of the page where the To-Do list and Study sessions are placed. -->
+
+        <aside class="right_column">
+            <div class="to_do_list"> <!-- The container box for to do list. -->
+                <h2>To Do List:</h2>
+                <ul class="list-items"> <!-- An unordered list for my to do list. -->
+                    <li>Create an Alan Partridge soundboard</li>
+                    <li>Create an interactive RGB color guessing game</li>
+                    <li>Read through the Javascript lectures</li>
+                    <li>Code an mp3 converter desktop app</li>
+                    <li>Finish Assessment 1 for WebDev</li>
+                </ul>
+            </div>
+            <div class="study_sessions"> <!-- The container box for study sessions. -->
+                <h2>Study sessions:</h2>
+                <ul class="list-items"> <!-- An unordered list for scheduled study sessions. -->
+                    <li>Group study session (Caribou cafe / Thursday)</li>
+                    <li>Midnight study session (10PM - 11PM)</li>
+                    <li>Online study session (5PM - Google Meet)</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>&copy; 2025 Kelvin Bautista</p> <!-- '&copy;' is an entity used to type the copyright icon. This footer defines my ownership of the website. -->
+    </footer>
+    
+</body>
+</html>

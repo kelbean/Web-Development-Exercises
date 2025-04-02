@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020202; /* I've always preferred darker UIs since they were easy on the eyes. */
+    color: white;
+}
+
+/* Header and Navigation Bar */
+
+header {
+    background-color: #6007AE; /* Darker header */
+    font-family: 'Arial'; /* Made the font for the texts in the header & nav bar 'Arial'. */
+    padding: 20px;; /* Inner padding of every element in the header & nav bar. */
+    display: flex; /* Makes the elements flexible. */
+    justify-content: space-between; /* Makes the spaces between the elements even. */
+    align-items: center;
+}
+
+nav ul { /* Styles the unordered list itself. */
+    list-style: none; /* Removes the usual symbol that is placed before list items. */
+    padding: 0; /* To get rid of the default padding. */
+    margin: 0; /* To get rid of the default margin. */
+    margin-left: 40px; /* To bring the elements a little to the right. */
+    display: flex;
+}
+
+nav li {
+    margin-right: 50px; /* Spacing between each element in the navbar. */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* To remove the underline that is usually given to nav links. */
+    display: block /* To display them as block level elements. */
+}
+
+.nav_corner { /* Now, let's style the button and hamburger icon. */
+    display: flex;
+    gap: 50px; /* Gap between the button and the hamburger icon. */
+    margin-right: 40px; /* To bring the elements a little to the left. */
+}
+
+.study_lab_button {
+    background-color: white; /* Button color. */
+    color: black;
+    font-weight: 600; /* Makes the text slightly bold. */
+    padding: 10px;
+    width: 120px;
+    border-radius: 20px; /* Curves up the button. */
+    text-decoration: none; /* Removes the link underline. */
+    text-align: center;
+    display: inline-block;
+}
+
+.study_lab_button:hover { /* When hovered over, the button slightly goes darker.*/
+    background-color: #B7B7B7;
+}
+
+.hamburger_icon {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    background-color: transparent; /* To remove the background color of the icon. */
+    border: none; /* Removes the border */
+}
+
+/* Main */
+
+main {
+    display: flex; /* Makes the main content flexible. */
+    padding: 50px; /* Inner padding of the main content. */
+    padding-top: 30px; /* Wanted to bring the main content a little closer to the nav bar. */
+    gap: 50px; /* Gap between elements. */
+}
+
+.in_progress {
+    flex: 2; /* This makes it so that the in progress section takes up more space than the right column. */
+    font-family: 'Trebuchet MS'; /* Different font family for the main content. */
+}
+
+.right_column {
+    flex: 1; /* This makes it so that the right column takes up less space. */
+    font-family: 'Trebuchet MS'; /* Different font family for the main content. */
+}
+
+/* Topics in progress */
+
+.topic {
+    background-color: #272727; /* Color of the topic boxes. */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Curves up the topic boxes. */
+}
+
+.topic_image img {
+    height: 200px; /* Made the images bigger. */
+    width: 100%; /* Uses up all of its width. */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.browse {
+    text-align: center; /* Centers the browse arrow sections. */
+    margin-top: 5px;;
+}
+
+.browse span {
+    margin-right: 20px;
+    cursor: pointer; /* Added this just to make it seem like its an interactive browse button. */
+}
+
+/* Right column: To-Do list and Study sessions */
+
+.to_do_list, .study_sessions { /* Both will have the same settings. */
+    background-color: #272727;
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px; /* Spacing between the two boxes. */
+    border-radius: 5px;
+}
+
+.list-items {
+    color: white;
+    line-height: 2; /* Better spacing for the list items to make it look clean. */
+    padding-left: 20px /* Aligned the lists with the heading titles. */
+}
+
+/* Footer styling */
+
+footer {
+    background-color: #6007AE; /* Footer color */
+    color: #FFFFFF;
+    text-align: center; /* Centers the copyright notice. */
+    padding: 5px; /* Adjusts the spacing between the text and edges. */
+    font-family: 'Arial'; /* Arial font is used for the footer text. */
+}
