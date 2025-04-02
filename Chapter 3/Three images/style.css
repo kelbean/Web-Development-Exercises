@@ -1,0 +1,58 @@
+/* Body */
+
+body {
+    text-align: center; /* Centers everything. */
+    background-color: #F0F0F0; /* Set this color as the background because I wanted a slightly softer tone. */
+    margin: 20px; /* Adjusts the spacing of all elements. */
+}
+
+.title {
+    color: #B31212; /* Changes the color of the text 'JAPAN IN THREE TONES' to slightly dark red. */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Georgia'; /* The text uses the Georgia font. */
+}
+
+.gallery {
+    display: flex; /* Enables the flexbox layout to align all the elements inside the gallery in a row. */
+    justify-content: center; /* Centers the images horizontally. */
+    gap: 40px; /* Gap between each image. */
+    margin-top: 40px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column; /* Stacks both the images and the images vertically so that the information is under the image. */
+    align-items: center;
+}
+
+img {
+    /* Width and height are smaller than the original size but it still retains the images' original aspect ratio. */
+    width: 385px;
+    height: 385px;
+    border-radius: 20px; /* Adds curvy corners to the images. */
+    object-fit: cover; /* Image covers the entire area. */
+}
+
+.information {
+    width: 240px;
+    color: black;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.6; /* Adjusting the spacing between the two texts. */
+}
+
+/* Adjusting the filters */
+
+#himeji {
+    filter: sepia(50%); /* Adding the sepia filter to the 'Himeji Castle' image by 50%. */
+  }
+
+#temple {
+    filter: grayscale(1); /* Fully adding the grayscale filter to the 'Temple in Kyoto' image. */
+}
+
+#skytree {
+    filter: saturate(160%) /* Saturating 'The Skytree' image by 160%. */
+}
