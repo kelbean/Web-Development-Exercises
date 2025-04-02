@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="soundboard-container">
+
+        <h2>Soundboard 📢✨</h2> <!-- Soundboard title. -->
+
+        <div class="buttons">
+
+            <!-- Second page of buttons -->
+
+            <!-- Button 10 -->
+
+            <button onclick="playSound('asian-gong')">
+                Asian gong
+                <br>
+                0:09
+            </button>
+            <audio id="asian-gong" src="audio/asian-gong.mp3"></audio>
+
+            <!-- Button 11 -->
+
+            <button onclick="playSound('confused')">
+                Confused
+                <br>
+                0:09
+            </button>
+            <audio id="confused" src="audio/confused.mp3"></audio>
+
+            <!-- Button 12 -->
+
+            <button onclick="playSound('steve')">
+                I am Steve
+                <br>
+                0:07
+            </button>
+            <audio id="steve" src="audio/i-am-steve.mp3"></audio>
+
+            <!-- Button 13 -->
+
+            <button onclick="playSound('meow')">
+                Meow!
+                <br>
+                0:01
+            </button>
+            <audio id="meow" src="audio/meow.mp3"></audio>
+
+            <!-- Button 14 -->
+
+            <button onclick="playSound('shutdown')">
+                Shut down
+                <br>
+                0:03
+            </button>
+            <audio id="shutdown" src="audio/shutdown.mp3"></audio>
+
+            <!-- Button 15 -->
+
+            <button onclick="playSound('suspicious')">
+                Suspicious
+                <br>
+                0:04
+            </button>
+            <audio id="suspicious" src="audio/suspicious.mp3"></audio>
+
+            <!-- Button 16 -->
+
+            <button onclick="playSound('tuturu')">
+                Tuturu!
+                <br>
+                0:01
+            </button>
+            <audio id="tuturu" src="audio/tuturu.mp3"></audio>
+
+            <!-- Button 17 -->
+
+            <button onclick="playSound('vine-boom')">
+                Vine boom
+                <br>
+                0:01
+            </button>
+            <audio id="vine-boom" src="audio/vine-boom.mp3"></audio>
+
+            <!-- Button 18 -->
+
+            <button onclick="playSound('wow')">
+                Wow!
+                <br>
+                0:04
+            </button>
+            <audio id="wow" src="audio/wow.mp3"></audio>
+        </div>
+
+        <div class="browse">
+            <a href="soundboard.html" id="left"><</a>
+        </div>
+    </div>
+
+    <div class="text-to-speech">
+        <textarea id="textInput" rows="4" cols="50" placeholder="Type something..."></textarea>
+        <br>
+        <button onclick="speak()">Speak</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

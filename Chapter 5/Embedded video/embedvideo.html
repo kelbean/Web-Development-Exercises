@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Video</title>
+    <!-- Since this file isn't exactly filled with content, I'll be styling internally. -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* This centers the video horizontally. */
+            align-items: center; /* This centers the video vertically. */
+            height: 100vh; /* Makes the body take up the full viewport height.*/
+            margin: 0; /* Removes the default margin that is set. */
+            background-color: white;
+        }
+        video { /* Slight styling to the video itself. */
+            max-width: 50%;
+            height: auto;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Here, I embedded an epic video using the <video> tag. The controls attribute adds options to configure the video itself. -->
+    <video controls loop poster="naoto_poster.jpg"> <!-- Loop repeats the video when it ends. Poster gives a thumbnail at the start using the image I linked. -->
+        <source src="naoto-feels-alive.mp4" type="video/mp4"> <!-- This defines the video file and format. -->
+        Your browser does not support this video. <!-- If the video doesn't show up, a pop-up message will appear saying that the user's browser does not support the video. -->
+    </video>
+</body>
+</html>

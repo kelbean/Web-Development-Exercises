@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="soundboard-container"> <!-- Making a box for the samples to be in. -->
+
+        <h2>Soundboard 📢✨</h2> <!-- Soundboard title. -->
+
+        <div class="buttons"> <!-- A block for all the buttons. -->
+
+            <!-- First page of buttons -->
+
+            <!-- Button 1 -->
+
+            <button onclick="playSound('ah-ha')">
+                Ah ha!
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="ah-ha" src="audio/ah-ha.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 2 -->
+
+            <button onclick="playSound('back-of-the-net')">
+                Back of the net
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="back-of-the-net" src="audio/back-of-the-net.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 3 -->
+
+            <button onclick="playSound('bang-out-of-order')">
+                Bang out of order
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="bang-out-of-order" src="audio/bangoutoforder.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 4 -->
+
+            <button onclick="playSound('dan')">
+                Dan!
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="dan" src="audio/dan.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 5 -->
+
+            <button onclick="playSound('email-of-the-evening')">
+                Email of the evening
+                <br>
+                0:03
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="email-of-the-evening" src="audio/emailoftheevening.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 6 -->
+
+            <button onclick="playSound('hello-partridge')">
+                Hello partridge
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="hello-partridge" src="audio/hellopartridge.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 7 -->
+
+            <button onclick="playSound('i-ate-a-scotch-egg')">
+                I ate a scotch egg
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="i-ate-a-scotch-egg" src="audio/iateascotchegg.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 8 -->
+
+            <button onclick="playSound('im-confused')">
+                I'm confused
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="im-confused" src="audio/imconfused.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+
+            <!-- Button 9 -->
+
+            <button onclick="playSound('superb')">
+                Superb
+                <br>
+                0:01
+            </button> <!-- When the button is clicked, playSound function with the ID is called. -->
+            <audio id="superb" src="audio/superb.mp3"></audio> <!-- Linking the sound and giving it an ID. -->
+        </div>
+
+        <!-- Left and right arrows -->
+
+        <div class="browse">
+            <a href="page2.html" id="right">></a> <!-- Right arrow is styled as a button and links to the 2nd page where the other samples are. -->
+        </div>
+    </div>
+
+    <!-- Text to speech -->
+
+    <div class="text-to-speech">
+        <!-- Text area is for users to place in their inputs. -->
+        <textarea id="textInput" placeholder="Type something..."></textarea>
+        <br> <!-- A break line to place the button under. -->
+        <button onclick="speak()">Speak</button> <!-- When the button is clicked, the speak function is called. -->
+    </div>
+
+    <script src="script.js"></script> <!-- Linking this document to the javascript file where all the functions are. -->
+
+</body>
+</html>

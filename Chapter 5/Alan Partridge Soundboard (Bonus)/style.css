@@ -1,0 +1,103 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    gap: 30px; /* Adjusts the distance between the soundboard itself and the text to speech generator. */
+    background-image: url('bg.gif'); /* Decided to go for a cute pixel art background. */
+    background-repeat: no-repeat; /* Makes sure that the background won't repeat making a whole grid. */
+    background-size: cover; /* Covers the whole page. */
+    background-attachment: fixed; /* Fixes the background so that it's not scrollable. */
+}
+
+/* Soundboard box */
+
+.soundboard-container {
+    display: flex; /* Makes the layout flexible. */
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    flex-direction: column; /* By doing this, it'll set the buttons in a column. */
+    align-items: center; /* Aligns all elements to the center. */
+    }
+
+/* Text to speech section */
+
+.text-to-speech {
+    width: 50%;
+    padding: 30px;
+    padding-right: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.text-to-speech textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid gray; /* Makes the border of the textarea input box gray. */
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.text-to-speech button {
+    background-color: #50b051; /* Color of the speak button. */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* When hovered over, cursor turns into a pointer. */
+}
+
+/* Buttons */
+
+.buttons {
+    display: grid; /* Buttons are organized in a grid format. */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Makes it so that the items auto fit. */
+    gap: 10px; /* The gap between all the buttons. */
+    width: 100%; /* Uses up all the width. */
+}
+
+.buttons button {
+    background-color: #d55071; /* Color of the button. */
+    padding: 30px;
+    font-family: 'Trebuchet MS'; /* Font for the text inside the button. */
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.7s; /* Makes an animation transitioning to a darker background color.  */
+}
+
+.buttons button:hover {
+    background-color: #8c344a; /* When hovered over, the button gets darker. */
+    color: white; /* When hovered over, the text goes from black to white. */
+}
+
+/* Arrows */
+
+.browse {
+    text-align: center; /* Browsing arrows are placed in the center under the buttons. */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.browse a {
+    text-decoration: none;
+    background-color: #d55071; /* Color of the arrow button. */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.browse a:hover {
+    background-color: #8c344a; /* When hovered over, the button gets darker. */
+}
