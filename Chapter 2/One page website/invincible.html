@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible Website</title>
+    <!-- Linking this html file to an external css stylesheet file for styling. -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+
+    <!-- Using the nav tag to define a set of navigation links at the top. -->
+    <nav class="navbar"> <!-- Setting it as class 'navbar' to style it in the stylesheet. -->
+        <ul> <!-- An unordered list to put the items together -->
+            <!-- '<a>' makes a hyperlink. 'href' indicates the link's destination. -->
+            <li><a href="#overview">Overview</a></li> <!-- For example, this command tells the browser to navigate to the section with the ID 'overview' on the same page. -->
+            <li><a href="#keyInfo">Info</a></li>
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Logo -->
+
+    <div class="logo_container">
+        <img src="logo.png" alt="Invincible Logo" class="logo"> <!-- This 'img' tag links to the image path and shows it on the page. -->
+    </div>
+
+    <!-- Main content -->
+
+    <main>
+        <section id="overview"> <!-- Gave this section the 'overview' ID so that it can be referenced by the overview navigation bar link. -->
+            <h2>Overview:</h2>
+            <p>
+                An animated superhero series that revolves around 17-year-old Mark Grayson,
+                who's just like every other guy his age — except his father is the most powerful
+                superhero on the planet, Omni-Man. But as Mark develops powers of his own, he discovers
+                his father’s legacy may not be as heroic as it seems.
+            </p>
+        </section>
+    
+        <section id="keyInfo"> <!-- Gave this section the 'keyInfo' ID so that it can be referenced by the info navigation bar link. -->
+            <h2>Key information:</h2>
+            <ul>
+                <li><b>Show creators:</b> Robert Kirkman, Ryan Ottley, Cory Walker</li>
+                <li><b>Genre:</b> Superhero, Action, Drama, Animation.</li>
+                <li><b>Streaming platform:</b> Prime Video</li>
+                <li><b>First episode date:</b> March 25, 2021</li>
+            </ul>
+        </section>
+    
+        <section id="cast"> <!-- Gave this section the 'cast' ID so that it can be referenced by the cast navigation bar link. -->
+            <h2>Main cast:</h2>
+            <ul>
+                <li>Steven Yeun</li>
+                <li>Sandra Oh</li>
+                <li>J.K. Simmons</li>
+                <li>Gillian Jacobs</li>
+                <li>Walton Goggins</li>
+            </ul>
+        </section>
+        
+        <section id="characters"> <!-- Gave this section the 'cast' ID so that it can be referenced by the characters navigation bar link. -->
+            <h2>Characters:</h2>
+            <ul>
+                <li>Invincible</li>
+                <li>Debbie Grayson</li>
+                <li>Omni-Man</li>
+                <li>Atom Eve</li>
+                <li>Cecil Stedman</li>
+            </ul>
+        </section>
+    
+        <section id="reviews"> <!-- Gave this section the 'cast' ID so that it can be referenced by the reviews navigation bar link. -->
+            <h2>Reviews:</h2>
+            <p>
+                Invincible" is a must-watch animated series that masterfully blends heart, action, and depth. 
+                With an impressive 8.7 on IMDb and a 99% on Rotten Tomatoes, it captivates from the first episode 
+                with stunning animation, a gripping storyline, and complex characters. The stellar voice cast and 
+                well-crafted narrative make it a standout in the superhero genre. Whether you're familiar with the 
+                2003 comic or not, this series is an absolute thrill to watch!
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- This is where I'll be adding the main website link, including a button. -->
+
+    <footer class="bottom_footer">
+       <ul>
+        <li><b>Visit the official website to watch the show:</b></li> <!-- Made this text bold. -->
+        <!-- Here, I made the main website a link destination with a button styled to it. The target attribute opens that link in another tab because of "_blank" -->
+        <li><a href="https://www.primevideo.com/detail/Invincible/0K677J96WQ96K6UY6BL15O70CO" target="_blank" class="button">Watch now</a></li>
+       </ul>
+    </footer>
+
+</body>
+</html>

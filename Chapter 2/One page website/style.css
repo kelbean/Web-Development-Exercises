@@ -1,0 +1,108 @@
+/* Body */
+
+body {
+    margin: 0; /* This sets the margin of the navbar to 0. This makes it look cleaner. */
+    background-color: #E9EFF0;
+}
+
+/* Main */
+
+main {
+    margin: 80px; /* Sets the margin for the actual main content. */
+    padding-bottom: 40px; /* Sets the bottom spacing for each element in main. */
+}
+
+/* Navigation bar */
+
+.navbar ul {
+    list-style-type: none; /* This removes the bullet points. */
+    background-color: #11C2E3;
+    padding: 0px;
+    margin: 0px;
+    display: flex; /* Orders the elements side by side. */
+    justify-content: center; /* Centers the elements horizontally. */
+    align-items: center; /* Centers the elements vertically. */
+}
+
+/* Navigation bar links */
+
+.navbar a {
+    color: white; 
+    text-decoration: none; /* Removes the underline from the text links. */
+    padding: 15px; /* Overall padding for each block of link. */
+    padding-right: 50px; /* Right spacing for each block of link. */
+    padding-left: 50px; /* Left spacing for each block of link. */
+    display: block; /* Makes the link take up the full space of its container. */
+    text-align: center; /* Centers text inside the link */
+    font-family: Arial;
+}
+
+/* Navigation bar link hover animation */
+
+.navbar a:hover{
+    background-color: #1793AB; /* When hovered over, it changes to the specified color. */
+}
+
+/* Logo */
+
+.logo_container {
+    text-align: center; /* Centers the logo container. */
+    padding-top: 100px; /* Adjusts the spacing between the nav bar and the logo container itself. */
+    padding-bottom: 20px; /* Adjusts the spacing between the logo and main content. */
+}
+
+.logo {
+    width: 600px; /* Size of the logo. */
+}
+
+/* Headers & Info */
+
+h2 {
+    padding-top: 30px; /* Adjusts the top padding of every text with the <h2> tag. Added this for better spacing between the texts. */
+}
+
+h2, p, ul {
+    font-family: Helvetica; /* Changes the font of every text with <h2>, <p>, and <ul> tags to Helvetica. */
+}
+
+p, ul {
+    font-size: 18px; /* Adjusts the font size of the paragraphs and lists to 18 pixels. */
+    line-height: 1.8; /* Adjusts the line height of the texts. */
+    text-align: justify; /* Justifies the texts. */
+}
+
+/* Footer */
+
+.bottom_footer {
+    text-align: center; /* Centers the footer itself. */
+    padding-bottom: 150px; /* Adds an empty space at the bottom to give the user room. */
+}
+
+.bottom_footer ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.bottom_footer li {
+    margin-bottom: 20px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block; /* Allows the button to be aligned properly while maintaining block properties. */
+    padding: 10px 15px; /* Adds spacing for the text inside. */
+    background-color: #FFF30D; /* Color of the button. */
+    color: white; /* Color of the text inside the button. */
+    text-decoration: none; /* Removes the underline from the text since it's a link. */
+    font-weight: bold; /* Makes the text bold. */
+    border-radius: 50px; /* Makes the button curvy. */
+    text-align: center; /* Centers the text inside the button.  */
+}
+
+/* Button hover animation */
+
+.button:hover {
+    background-color: #CBC20B /* When hovered over, it changes to the specified color. */
+}
+

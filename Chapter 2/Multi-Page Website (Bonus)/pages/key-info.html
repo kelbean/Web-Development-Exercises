@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible Key Info</title>
+    <!-- Linking this html file to an external css stylesheet file for styling. -->
+    <!-- Since this file is in a subdirectory, I used '../' to move up one directory to link it to the css file. -->
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+
+    <!-- Using the nav tag to define a set of navigation links at the top. -->
+    <nav class="navbar"> <!-- Setting it as class 'navbar' to style it in the stylesheet. -->
+        <ul> <!-- An unordered list to put the items together -->
+            <!-- '<a>' makes a hyperlink. 'href' indicates the link's destination. -->
+            <!-- Since this file is in a subdirectory, I used '../' to move up one directory to go back to the main html file when clicked on. -->
+            <li><a href="../invincible.html">Overview</a></li> <!-- For example, this command tells the browser to navigate to the section with the ID 'overview' on the same page. -->
+            <li><a href="key-info.html">Info</a></li>
+            <li><a href="cast.html">Cast</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Logo -->
+
+    <div class="logo_container">
+        <!-- Since this file is in a subdirectory, I used '../' to move up one directory to link it to the image.  -->
+        <img src="../logo.png" alt="Invincible Logo" class="logo"> <!-- This 'img' tag links to the image path and shows it on the page. -->
+    </div>
+
+    <!-- Main content -->
+
+    <main>
+        <section>
+            <h2>Key information:</h2>
+            <ul>
+                <li><b>Show creators:</b> Robert Kirkman, Ryan Ottley, Cory Walker</li>
+                <li><b>Genre:</b> Superhero, Action, Drama, Animation.</li>
+                <li><b>Streaming platform:</b> Prime Video</li>
+                <li><b>First episode date:</b> March 25, 2021</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- This is where I'll be adding the main website link, including a button. -->
+
+    <footer class="bottom_footer">
+       <ul>
+        <li><b>Visit the official website to watch the show:</b></li> <!-- Made this text bold. -->
+        <!-- Here, I made the main website a link destination with a button styled to it. The target attribute opens that link in another tab because of "_blank" -->
+        <li><a href="https://www.primevideo.com/detail/Invincible/0K677J96WQ96K6UY6BL15O70CO" target="_blank" class="button">Watch now</a></li>
+       </ul>
+    </footer>
+
+</body>
+</html>
